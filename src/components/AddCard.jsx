@@ -1,5 +1,7 @@
 import React, { useEffect,useState } from 'react'
 import '../../src/App.css'
+import cityImg from "/images/City-Image.png"
+
 import App from '../App'
 
 function AddCard({src1,src2,cityHeading,cityName,setCityname,proceed}) {
@@ -16,7 +18,7 @@ function AddCard({src1,src2,cityHeading,cityName,setCityname,proceed}) {
         <img className={'add-img'} src={src2} alt="" />
         <input value={cityName} onChange={handleChange} className='searchInp' type="text" />
         <button onClick={proceed} className='proceedBtn'>Proceed</button>
-        <img className='addPart-img' src={src1} alt="" />
+        <img className='addPart-img' src={cityImg} alt="" />
 
     </div>
     

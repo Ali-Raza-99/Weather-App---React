@@ -2,14 +2,18 @@
   "name": "weather-app",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://Ali-Raza-99.github.io/Weather-App---React",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
+    "gh-pages": "^6.1.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
