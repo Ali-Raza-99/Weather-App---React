@@ -11,7 +11,7 @@ import AddImg from "/images/Add-Symbol.png"
 function App() {
 
   const [cityName,setCityname] = useState(``)
-  const [weatherStatus,setWeatherStatus] = useState({temp:'Temp',condition:'condition',minTemp:'0',maxTemp:'0',city:'City Name',country:''})
+  const [weatherStatus,setWeatherStatus] = useState({temp:'Temp',condition:'condition',minTemp:'mintemp',maxTemp:'maxtemp',city:'City Name',country:''})
 
   
 
@@ -55,7 +55,7 @@ function App() {
   return (
     <>
     <div className='main'>
-      <InfoCard  country={weatherStatus.country} minTemp={weatherStatus.minTemp} maxTemp={weatherStatus.maxTemp} weatherCondition={weatherStatus.condition} degree={weatherStatus.temp} city={weatherStatus.city}  src1={cloudImg}/>
+      <InfoCard  country={weatherStatus.country} minTemp={weatherStatus.minTemp} maxTemp={weatherStatus.maxTemp} weatherCondition={weatherStatus.condition} temp={weatherStatus.temp} city={weatherStatus.city}  src1={cloudImg}/>
       <AddCard proceed={proceed} cityName={cityName} setCityname={setCityname} cityHeading={'Enter Any City '} src2={AddImg} src1={cityImg}/>
     </div>
     </>
