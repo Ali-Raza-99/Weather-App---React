@@ -49,7 +49,7 @@
 }
 .weatherInfo{
   display: flex;
-  margin-top: 22px;
+  /* margin-top: 22px; */
   flex-direction: column;
   color: rgb(70, 188, 235);
 }
@@ -61,19 +61,15 @@
   display: flex;
 }
 
-.minVal-parent{
-  margin-top: 35px;
+
+.maxVal-parent,.windSpeed,.humidity,.minVal-parent{
+  margin-top: 22px;
   display: flex ;
-  justify-content: space-evenly;
+  gap: 5px;
+  justify-content: space-between;
   align-items: center;
 }
 
-.maxVal-parent{
-  margin-top: 22px;
-  display: flex ;
-  justify-content: space-evenly;
-  align-items: center;
-}
 .minVal-parent p{
   color: #e44b4b ;
   font-size: 14px;
@@ -84,12 +80,33 @@
   font-size: 14px ;  
   font-weight: 600;
 }
-.maxVal-parent h3 , .minVal-parent h3{
-  font-size: large;
+.windSpeed p {
+  color: rgb(167, 125, 10) ;
+  font-size: 14px ;  
+  font-weight: 600;
+}
+.humidity p {
+  color: rgb(10, 167, 49) ;
+  font-size: 14px ;  
+  font-weight: 600;
+}
+.maxVal-parent h3 , .minVal-parent h3,.windSpeed h3,.humidity h3{
+  font-size:14px;
   color: rgb(51, 48, 48);
 
 }
 
+.meter-row1,.meter-row2{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3px;
+  padding: 0 10px 0 10px;
+  
+}
+.meter{
+  margin-top: 32px;
+}
 .searchInp:focus{
   border-color: #4cc0c0; 
 }
